@@ -1,4 +1,4 @@
-package com.nipunya.demo.rest;
+package com.nipunya.demo.interfaces.rest;
 
 import com.nipunya.demo.domain.service.MovieCatalogService;
 import com.nipunya.demo.domain.service.MovieDto;
