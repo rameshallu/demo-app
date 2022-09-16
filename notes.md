@@ -1,3 +1,21 @@
+# 16 Sep
+Validations
+Spring - @Validated
+@NotEmpty, @Valid, @NotBlank, @Size
+
+Spring boot web - exception handling
+@ControllerAdvice, @ExceptionHandler
+
+ResponseEntity, HttpStatus.BAD_REQUEST
+
+Logging
+levels - error, info, debug, trace
+logging.level.*
+logging.level.org.hibernate=debug
+
+java -jar target/application.jar --debug
+
+
 # 15 Sep
 
 Spring Boot
