@@ -1,6 +1,7 @@
 # 18 Sep
 @Autowired(required = false|true(default))
 Constructor - Optional<T>
+@Primary, @Qualifier
 
 RESTful API - guidelines
 Hypermedia - REST(REpresentational State Transfer)ful
@@ -13,7 +14,22 @@ Spring HATEOS  (Hypermedia HAL)
 
 Spring Boot - conclude
 
+-------------------------
 
+### Associations (JPA) - Relationships (RDBMS - PK:FK)
+OnetoOne, OneToMany, ManyToOne,
+ManyToMany - create entities, update relationship
+
+```shell
+curl --location --request PUT 'http://localhost:8080/api/actors/4/movies' \
+--header 'Content-Type: text/uri-list' \
+--data-binary '@/C:/Users/rames/demo/spring/demo-app/uris.txt'
+```
+
+### uris.txt
+```text
+http://localhost:8080/api/movies/1
+```
 
 # 17 Sep
 Spring Boot core

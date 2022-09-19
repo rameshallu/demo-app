@@ -1,6 +1,7 @@
 package com.nipunya.demo.domain.repository;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "actor")
@@ -12,6 +13,20 @@ public class Actor {
 
     @Column(name = "name", nullable = false)
     private String name;
+
+    @ManyToMany
+    @JoinTable(name = "actor_movies",
+            joinColumns = @JoinColumn(name = "actor_id"),
+            inverseJoinColumns = @JoinColumn(name = "movies_id"))
+    private Set<Movie> movies = new java.util.LinkedHashSet<>();
+
+    public Set<Movie> getMovies() {
+        return movies;
+    }
+
+    public void setMovies(Set<Movie> movies) {
+        this.movies = movies;
+    }
 
     public String getName() {
         return name;

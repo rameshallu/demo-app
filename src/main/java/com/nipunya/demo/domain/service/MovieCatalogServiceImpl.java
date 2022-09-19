@@ -2,11 +2,14 @@ package com.nipunya.demo.domain.service;
 
 import com.nipunya.demo.domain.repository.Movie;
 import com.nipunya.demo.domain.repository.MovieRepository;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@Primary
 public class MovieCatalogServiceImpl implements MovieCatalogService {
 
     private final MovieRepository movieRepository;
