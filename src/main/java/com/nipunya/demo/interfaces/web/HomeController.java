@@ -1,7 +1,7 @@
 package com.nipunya.demo.interfaces.web;
 
-import com.nipunya.demo.domain.service.MovieCatalogService;
-import com.nipunya.demo.domain.service.MovieDto;
+import com.nipunya.demo.domain.movie.service.MovieCatalogService;
+import com.nipunya.demo.domain.movie.service.MovieDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

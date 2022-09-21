@@ -1,8 +1,7 @@
-package com.nipunya.demo.domain.service;
+package com.nipunya.demo.domain.movie.service;
 
-import com.nipunya.demo.domain.repository.Movie;
-import com.nipunya.demo.domain.repository.MovieRepository;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.nipunya.demo.domain.movie.repository.Movie;
+import com.nipunya.demo.domain.movie.repository.MovieRepository;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 

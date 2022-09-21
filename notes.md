@@ -1,3 +1,33 @@
+# 19 Sep
+Re-usability - DRY (Don't Repeat Yourself) - S/W dev principle
+Inheritance (Is-A), Composition (Has-A)
+
+Polymorphism
+
+Parent (ex: Vehicle)
+Car extends Vehicle
+Bike extends Vehicle
+
+Vehicle v1 = new Car()
+Vehicle v2 = new Bike()
+v1.someMethod()
+v2.someMethod()
+
+Engine
+
+Car extends Engine
+Bike extends Engine
+
+Car {
+  Engine engine
+ engine.start()
+}
+
+Project Lombok
+
+Inheritance - @MappedSuperclass
+Composition - @Embeddable, @Embedded
+
 # 18 Sep
 @Autowired(required = false|true(default))
 Constructor - Optional<T>

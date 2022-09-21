@@ -1,4 +1,4 @@
-package com.nipunya.demo.domain.service;
+package com.nipunya.demo.domain.movie.service;
 
 import java.util.List;
 

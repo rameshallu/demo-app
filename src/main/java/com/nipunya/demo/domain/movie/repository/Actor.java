@@ -1,4 +1,4 @@
-package com.nipunya.demo.domain.repository;
+package com.nipunya.demo.domain.movie.repository;
 
 import javax.persistence.*;
 import java.util.Set;

@@ -1,12 +1,16 @@
-package com.nipunya.demo.domain.service;
+package com.nipunya.demo.domain.movie.repository;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+import javax.persistence.*;
 
-public class MovieDto {
+@Entity
+@Table(name = "movie")
+public class Movie {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id", nullable = false)
     private Integer id;
-    @NotBlank(message = "name cannot be empty")
-    @Size(min = 3, message = "name must have minimum 3 characters")
+
+    @Column(name="name", nullable = false)
     private String name;
 
     public Integer getId() {

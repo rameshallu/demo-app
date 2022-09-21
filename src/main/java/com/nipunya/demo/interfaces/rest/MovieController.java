@@ -1,9 +1,7 @@
 package com.nipunya.demo.interfaces.rest;
 
-import com.nipunya.demo.domain.service.MovieCatalogService;
-import com.nipunya.demo.domain.service.MovieDto;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
+import com.nipunya.demo.domain.movie.service.MovieCatalogService;
+import com.nipunya.demo.domain.movie.service.MovieDto;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
