@@ -1,3 +1,10 @@
+# 20 Sep
+JPA - repository
+Query methods - findBy<property.subProperty>
+@Query, @Param
+@NamedQuery
+CreteriaQuery
+
 # 19 Sep
 Re-usability - DRY (Don't Repeat Yourself) - S/W dev principle
 Inheritance (Is-A), Composition (Has-A)
