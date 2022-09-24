@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @Entity
-@Table(name = "price", uniqueConstraints = {
+@Table(name = "price", schema = "vehicle", uniqueConstraints = {
         @UniqueConstraint(name = "UniqueRegionAndAmount", columnNames = {"region", "amount"})
 })
 public class Price {

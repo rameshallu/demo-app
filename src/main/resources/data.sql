@@ -9,7 +9,7 @@ insert into vehicle.model(id, name, make_id) values(1, 'Alcazar', 1);
 insert into vehicle.model(id, name,  make_id) values(2, 'Alto', 2);
 
 insert into vehicle.variant(id, name,  model_id) values(1, '800', 2);
-insert into vehicle.variant(id, name,  model_id) values(1, 'K10', 2);
+insert into vehicle.variant(id, name,  model_id) values(2, 'K10', 2);
 
 --commerce
 insert into commerce.category(id, name) values(1, 'Fruits & Vegetables');

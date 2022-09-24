@@ -6,10 +6,11 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.time.LocalDate;
 
+// TODO: Review
 @Getter
 @Setter
 @Entity
-@Table(name = "generation")
+@Table(name = "generation", schema = "vehicle")
 public class Generation {
     @Id
     @Column(name = "id", nullable = false)

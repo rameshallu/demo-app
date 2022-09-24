@@ -14,7 +14,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "version")
+@Table(name = "version", schema = "vehicle")
 public class Version {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

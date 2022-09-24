@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "variant")
+@Table(name = "variant", schema = "vehicle")
 public class Variant {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
