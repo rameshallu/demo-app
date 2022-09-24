@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "bike")
+@Table(name = "bike", schema = "vehicle")
 public class Bike extends Vehicle {
 
 

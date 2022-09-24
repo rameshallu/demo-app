@@ -8,6 +8,6 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "car")
+@Table(name = "car", schema = "vehicle")
 public class Car extends Vehicle {
 }

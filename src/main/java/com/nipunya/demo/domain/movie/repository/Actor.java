@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "actor")
+@Table(name = "actor", schema = "movie")
 public class Actor {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

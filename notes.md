@@ -1,4 +1,7 @@
 # 20 Sep
+Database schemas
+ex: commerce
+
 JPA - repository
 Query methods - findBy<property.subProperty>
 @Query, @Param

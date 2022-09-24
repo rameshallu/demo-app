@@ -3,7 +3,7 @@ package com.nipunya.demo.domain.movie.repository;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "movie")
+@Table(name = "movie", schema = "movie")
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
