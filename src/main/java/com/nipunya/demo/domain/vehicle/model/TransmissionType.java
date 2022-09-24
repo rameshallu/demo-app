@@ -8,18 +8,14 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "trim", schema = "vehicle")
-public class Trim {
+@Table(name = "transmission_type", schema = "vehicle")
+public class TransmissionType {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private Integer id;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "model_id", nullable = false)
-    private Model model;
-
-    @Column(name = "name", nullable = false)
+    @Column(name = "name", nullable = false, unique = true)
     private String name;
 
 }

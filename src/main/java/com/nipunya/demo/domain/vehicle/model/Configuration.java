@@ -27,8 +27,31 @@ public class Configuration {
     @JoinColumn(name = "trim_id", nullable = false)
     private Trim trim;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "style_id", nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "style_id")
     private Style style;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "make_id", nullable = false)
+    private Make make;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "model_id", nullable = false)
+    private Model model;
+
+    @Column(name = "seater")
+    private Integer seater;
+
+    @ManyToOne
+    @JoinColumn(name = "transmission_id")
+    private Transmission transmission;
+
+    @ManyToOne
+    @JoinColumn(name = "paint_type_id")
+    private PaintType paintType;
+
+    @ManyToOne
+    @JoinColumn(name = "fuel_type_id")
+    private FuelType fuelType;
 
 }

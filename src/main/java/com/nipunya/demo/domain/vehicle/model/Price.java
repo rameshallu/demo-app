@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @Setter
 @Entity
 @Table(name = "price", schema = "vehicle", uniqueConstraints = {
-        @UniqueConstraint(name = "UniqueRegionAndAmount", columnNames = {"region", "amount"})
+        @UniqueConstraint(name = "UniqueConfigurationAndRegion", columnNames = {"configuration_id", "price_region_id"})
 })
 public class Price {
     @Id
@@ -22,8 +22,9 @@ public class Price {
     @JoinColumn(name = "configuration_id", nullable = false)
     private Configuration configuration;
 
-    @Column(name = "region", nullable = false)
-    private String region;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "price_region_id", nullable = false)
+    private PriceRegion priceRegion;
 
     @Column(name = "amount", nullable = false, precision = 19, scale = 2)
     private BigDecimal amount;
